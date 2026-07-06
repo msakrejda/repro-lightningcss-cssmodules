@@ -1,0 +1,8 @@
+import Box from "../../components/Box.tsx";
+
+# Lightning CSS CSS-modules dev scoping repro
+
+Expected: a 3-column purple grid. Actual in `astro dev`: unstyled, because the
+element's class hash differs from the injected stylesheet's selector hash.
+
+<Box />
